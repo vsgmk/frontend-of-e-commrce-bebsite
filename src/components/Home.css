@@ -1,0 +1,256 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.6;
+}
+
+/* Home Container */
+.home-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.auth-button {
+  background-color: #007bff; /* Bright blue */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-left: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.home-heading {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  color: #007bff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-description {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Product List and Card */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.product-card {
+  background-color: #ffffff; /* White card background */
+  border: 1px solid #ddd; /* Light gray border */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.product-image {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05); /* Zoom effect on image */
+}
+
+.product-info h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-info p {
+  font-size: 1.1em;
+  color: #777;
+  margin: 5px 0;
+}
+
+.product-info .product-price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #28a745; /* Green price */
+  margin-top: 10px;
+}
+
+/* Buttons */
+.like-button,
+.cart-button {
+  background-color: #28a745; /* Green */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin: 15px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.like-button:hover,
+.cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+.liked {
+  background-color: #00ff1a; /* Red when liked */
+}
+
+.liked:hover {
+  background-color: #00d5ff; /* Darker red on hover */
+}
+
+.cart-button {
+  background-color: #007bff; /* Blue */
+}
+
+.cart-button:hover {
+  background-color: #007bff; /* Darker blue on hover */
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.modal-content h2 {
+  color: #007bff; /* Blue text for heading */
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.modal-button {
+  background-color: #007bff; /* Blue */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #28a745; /* Green background for add to cart */
+  color: white; /* White text */
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+/* Hover effect */
+.add-to-cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+/* Active effect when clicked */
+.add-to-cart-btn:active {
+  background-color: #1e7e34; /* Even darker green when clicked */
+  transform: scale(1); /* Button returns to normal size */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow when clicked */
+}
+
+/* Disabled state */
+.add-to-cart-btn:disabled {
+  background-color: #6c757d; /* Gray background for disabled state */
+  cursor: not-allowed; /* Cursor changes to not-allowed */
+  box-shadow: none; /* Remove shadow when disabled */
+  opacity: 0.6; /* Slight transparency */
+}
